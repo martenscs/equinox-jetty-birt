@@ -3,7 +3,6 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Birt OSGi Viewer
 Bundle-SymbolicName: org.eclipse.birt.osgi.report.viewer
 Bundle-Version: 4.4.1.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Web-ContextPath: /reports
 Bundle-ClassPath: .,
  WEB-INF/classes
