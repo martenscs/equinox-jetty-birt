@@ -20,7 +20,6 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.apache.axis.transport.http.AxisServlet;
 import org.eclipse.birt.core.exception.BirtException;
@@ -32,8 +31,6 @@ import org.eclipse.birt.report.resource.BirtResources;
 import org.eclipse.birt.report.resource.ResourceConstants;
 import org.eclipse.birt.report.session.IViewingSession;
 import org.eclipse.birt.report.session.ViewingSessionUtil;
-import org.eclipse.birt.report.session.ViewingCache;
-import org.eclipse.birt.report.utility.BirtUtility;
 import org.eclipse.birt.report.utility.ParameterAccessor;
 
 abstract public class BirtSoapMessageDispatcherServlet extends AxisServlet
@@ -183,6 +180,7 @@ abstract public class BirtSoapMessageDispatcherServlet extends AxisServlet
 	 * @exception IOException
 	 * @return
 	 */
+	@SuppressWarnings("rawtypes")
 	public void doPost( HttpServletRequest request, HttpServletResponse response )
 			throws ServletException, IOException
 	{
