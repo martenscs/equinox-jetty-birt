@@ -75,6 +75,9 @@ public class SampleDBJDBCConnectionFactory implements IConnectionFactory {
 
 		// initClassLoaders();
 
+		
+		
+		
 		return getDerbyDriver().connect(dbUrl, props);
 	}
 
